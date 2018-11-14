@@ -1,0 +1,11 @@
+.uq-header_inner {
+  border-bottom: none;
+  top: -72px;
+  transition: liear 5s;
+}
+
+@media screen and (min-width: 640px) {
+  .indexvisual_sp {
+    display: none;
+  }
+}

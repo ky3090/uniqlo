@@ -1,0 +1,52 @@
+html {
+  font-size: 106.25%;
+}
+
+
+body {
+  -web-kit-text-size-adjust: 100%;
+  /*モバイル端末の文字の自動調整自動調整を制御するため*/
+  font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #000;
+  line-height: 1;
+  min-width: 320px;
+  overflow-x: hidden;
+  /*はみ出た要素の左右の要素要素指定する*/
+}
+
+// header
+
+@media screen and (min-width: 980px) {
+  .uq-header {
+    height: 72px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .uq-header_inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    padding: 15px 0px 15px 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+}
+
+
+@media screen and (min-width: 980px) {
+  .indexvisual_bg {
+    display: block;
+  }
+}
+
+.uq-header_inner {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}

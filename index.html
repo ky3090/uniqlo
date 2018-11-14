@@ -7,25 +7,31 @@
     <!-- viewportはスマートフォンサイト宣言  width=devise-widthは幅をデバイス毎に合わせる設定  user-scalableはユーザがスケールイン、アウト可能かの設定 -->
     <!-- レスポンシブ対応したい場合は使用 -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href= "scss/style.scss">
     <title>ユニクロ(UNIQLO)アルバイト・パート情報</title>
     <meta name="description" content="ユニクロ(UNIQLO)アルバイト・パート採用サイトです。フリーター、学生など年齢に問わず挑戦できる環境です。採用情報の他にも仕事内容、スタッフ紹介、キャリアパスなど、様々な情報をご紹介しています">
     <!-- meta要素は文書におけるさまざまなメタデータを表します。メタデータとは、文書の文字コードや文書の概要、キーワードなどの文書に関する情報のことを表します -->
     <meta name="format-detection" content="telephone=no, address=no, email=no">
     <!-- 電話番号、住所、メールリンクの無効化 -->
-    <link name="short icon" href="/images/favicon_uniqlo.ico">
+    <link rel="shortcut icon" href="./images/favicon_uniqlo.ico">
     <!-- short iconはファビコンを指定する時に使用 -->
-    <link name="icon" href="/images/favicon_uniqlo.ico">
+    <link rel="icon" href="./images/favicon_uniqlo.ico">
     <!-- iconはファビコンを指定する時に使用 -->
     <meta property="og:title" content="ユニクロ(UNIQLO) アルバイト・パート情報">
     <!-- facebookなどのSNSでシェアされたときのサムネイルや要約文にされるもの -->
     <meta property="og:description" content="ユニクロ（UNIQLO）アルバイト・パート採用サイトです。フリーター、学生など年齢問わず挑戦できる環境です。採用情報の他にも、仕事内容、スタッフ紹介、キャリアパスなど、様々な情報をご紹介しています。">
     <meta property="og:url" content="https://www.fastretailing.com/employment/ja/uniqlo/jp/storestaff/">
-    <meta property="og:image" content="/images/og_staff.jpg">
+    <meta property="og:image" content="./images/og_staff.jpg">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ユニクロ（UNIQLO）アルバイト・パート情報">
     <!-- <meta property="fb:app_id" content="763542357003203"> -->
     <!-- 該当のFacebookアプリがそのページの管理アプリで、そのアプリの管理人（複数可）がそのページの管理人であることを記述する -->
+
+    <link rel="stylesheet" type="text/css" href= "css/style.css">
+    <link rel="stylesheet" type="text/css" href= "css/slick.css">
+    <link rel="stylesheet" type="text/css" href= "css/layout.css">
+    <link rel="stylesheet" type="text/css" href= "css/index.css">
+    <link rel="stylesheet" type="text/css" href= "css/html5-doctor-reset-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href= "css/reboot.css">
   </head>
   <body>
     <!-- <noscript>
@@ -35,9 +41,25 @@
     <!-- <script src="platform.js"></script> -->
     <!-- Javascriptで閲覧者のブラウザやOS等のプラットフォーム判定のため -->
     <header class="hq-header">
+      <div class="uq-header_inner" style="top: 0;">
+      </div>
     </header>
+
     <div class="uq-section">
+      <div class="indexvisual_sp">
+        <img src="images/index_main__people_staff_sp.jpg" width="750" height="900" alt="仲間と楽しむバイト">
+      </div>
+      <div class="indexvisual_tb">
+        <img src="images/index_main__people_staff_tb.jpg" width="768" height="480" alt="仲間と楽しむバイト">
+      </div>
+      <div class="uq-section indexvisual_bg">
+        <div class="indexvisual_flowing__text is_storestaff">
+          <span class="flow_1">
+          </span>
+        </div>
+      </div>
     </div>
+
     <article class="uq-section is_gray">
     </article>
     <section class="uq-section borrow_indexpickup indexpickup index-pickup is_staff f_fade on">
@@ -52,13 +74,14 @@
     </div>
     <footer class="uq-footer">
     </footer>
-    <script src="/js/jquery-1.11.3.min"></script>
+    <script src="./js/jquery-1.11.3.min"></script>
     <!-- 帯域幅を維持するためにjquery.js圧縮されたバージョン -->
-    <script src="/js/app.js"></script>
+    <script src="./js/app.js"></script>
     <!-- モバイルWebアプリのための軽量JavaScript UIライブラリ -->
-    <script src="/js/slick.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <!-- スライダープラグイン -->
-    <script src="/js/common.js"></script>
+    <script src="./js/common.js"></script>
     <!-- javascriptの規定やルールを定めるためのライブラリ -->
+
   </body>
 </html>
