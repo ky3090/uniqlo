@@ -16,25 +16,48 @@ body {
   /*はみ出た要素の左右の要素要素指定する*/
 }
 
-// header
-
-@media screen and (min-width: 980px) {
-  .uq-header {
-    height: 72px;
-  }
+a {
+  text-decoration: none;
+  outline: none;
 }
 
-@media screen and (min-width: 980px) {
-  .uq-header_inner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    width: 100%;
-    padding: 15px 0px 15px 20px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
+span {
+  font-size: 14px;
+  color: #333;
+  line-height: 0;
+  padding-left: 20px;
+  display: inline;
+  vertical-align: middle;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0);
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+/*// header*/
+
+
+.uq-header {
+  height: 72px;
+}
+
+.uq-header_inner {
+  position: fixed;
+  left: 0;
+  z-index: 99999;
+  /*ボックス順序指定する際に必要*/
+  width: 100%;
+  padding: 15px 0px 15px 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 
@@ -49,4 +72,139 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
   position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  /*ボックス順序指定する際に必要*/
+  width: 100%;
+  padding: 15px 0px 15px 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.uq-header_logo {
+  float: left;
+}
+
+@media screen and (min-width: 380px) and (min-width: 980px) {
+  .uq-header_logo span {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width: 380px) {
+  .uq-header_logo span br {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .uq-header_logo img {
+    width: 94px;
+  }
+}
+
+.uq-header_logo img {
+  width: 94px;
+  height: auto;
+  vertical-align: middle;
+  border: none;
+}
+
+
+.uq-header_logo span {
+  display: inline;
+  line-height: 0;
+  font-weight: bold;
+  color: #333;
+  padding-left: 15px;
+}
+
+.uq-header_logo span br {
+  display: none;
+}
+
+
+.uq-header_contact {
+  margin-top: 6px;
+  float: right;
+  width: 370px;
+}
+
+.uq-header_inner .uq-header_contact {
+  overflow: hidden;
+}
+
+.uq-header_inner .uq-header_contact .row_column {
+  width: 50%;
+  float: left;
+}
+
+.uq-header_contact .item {
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.uq-header_contact .item a {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  font-weight: bold;
+  background-color: #ff0000;
+  padding: 9px 0px;
+}
+
+.uq-header_contact .item a {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  font-weight: bold;
+  background-color: #ff0000;
+  padding: 9px 0px;
+}
+
+.pc {
+  display: block;
+}
+
+
+.uq-global_lods {
+  padding: 20px 38px;
+  float: right;
+}
+
+.uq-global_lods .lod {
+  background-color: #333;
+  display: block;
+  padding: 1px 12px;
+  position: relative;
+}
+
+.uq-global_lods .lod:after {
+  top: 8px;
+}
+
+.uq-global_lods .lod:after .uq-global_lods .lod:before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 1px 12px;
+  background-color: #333;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }

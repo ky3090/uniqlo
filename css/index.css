@@ -1,11 +1,16 @@
 .uq-header_inner {
   border-bottom: none;
   top: -72px;
+  -webkit-transition: liear 5s;
+  /*Chrome, safari対応*/
+  -moz-transition: liear 5s;
+  /*firefox対応*/
+  -ms-transition: liear 5s;
+  /*IE対応*/
   transition: liear 5s;
 }
 
-@media screen and (min-width: 640px) {
-  .indexvisual_sp {
-    display: none;
-  }
+.indexvisual_sp img {
+  width: 100%;
+  height: auto;
 }
